@@ -16,8 +16,10 @@ public class Problem {
      */
 
     public static String stringCopies(String word, int n) {
+        String newWord = word.substring(0,2);
 
-        return null;
+
+        return newWord;
     }
 
 
@@ -33,9 +35,20 @@ public class Problem {
 
     public static Boolean followedX(String str) {
 
+        StringBuilder builder = new StringBuilder();
+        builder.append(str.charAt(0));
+        for (int i = 1;i< str.length()-1;i++) {
+            if (str.charAt(i) + 1 == 'x'){
+                builder.append(str.charAt(i));
+                return true;
+        }
+            if(str.charAt(i)+2 == 'x'){
+                builder.append(str.charAt(i));
+                return  false;
+    }
+    }
         return null;
     }
-
 
     /* Problem 03
     Provided a given string, take note of how many times you see a substring length 2 occur.
@@ -50,6 +63,7 @@ public class Problem {
      */
 
     public static Integer subTwo(String str) {
+
 
         return null;
     }
